@@ -8,7 +8,7 @@ Run
 
 ```bash
 mkdir -p $HOME/.config/nvim
-git clone git@github.com:mutichung/neovim_config.git $HOME/.config/nvim
+git clone https://github.com/mutichung/neovim_config.git $HOME/.config/nvim
 ```
 
 to clone the repository. Then, run

@@ -1,15 +1,3 @@
--- Import lua modules
-require("keymaps")
-require("nvim_tree")
-require("onedark").load()
-require("transparent_config")
-vim.opt.termguicolors = true
-require("bufferline").setup{}
-require("indent_blankline").setup {
-    show_current_context = true,
-    show_current_context_start = true,
-}
-require("treesitter_config")
 -- Basic settings
 vim.bo.expandtab=true
 vim.o.ts=4
@@ -55,3 +43,17 @@ require('packer').startup(function(use)
         require('packer').sync()
     end
 end)
+
+-- Import lua modules
+require("keymaps")
+require("nvim_tree")
+require("onedark").load()
+require("transparent_config")
+vim.opt.termguicolors = true
+require("bufferline").setup{}
+require("indent_blankline").setup {
+    show_current_context = true,
+    show_current_context_start = true,
+}
+require("treesitter_config")
+

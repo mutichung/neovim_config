@@ -7,7 +7,14 @@ This repository stores Muti's neovim configurations.
 Run
 
 ```bash
-./install_nvim.sh
+mkdir -p $HOME/.config/nvim
+git clone git@github.com:mutichung/neovim_config.git $HOME/.config/nvim
 ```
 
-to set up neovim.
+to clone the repository. Then, run
+
+```bash
+$HOME/.config/nvim/install_nvim.sh
+```
+
+to setup Neovim.

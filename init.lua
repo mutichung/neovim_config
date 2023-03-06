@@ -39,6 +39,10 @@ require('packer').startup(function(use)
             require'alpha'.setup(require'alpha.themes.startify'.config)
         end
     }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
     if packer_bootstrap then
         require('packer').sync()
     end
@@ -56,4 +60,4 @@ require("indent_blankline").setup {
     show_current_context_start = true,
 }
 require("treesitter_config")
-
+require('lualine').setup()
